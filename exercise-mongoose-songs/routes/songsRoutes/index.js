@@ -28,6 +28,14 @@ router.put('/update-song/:youtube_id', async (req, res) => {
     res.send(result);
   });
 
+  router.get("/add-song-to-library/:name/:id", log,async (req, res) => {
+    const { name, id} = req.params;
+    const library = await LibraryModel.findOne({ name })
+    library.songs.push(id);
+    await library.save();
+    res.send('done');
+  });
+
 // Crear la ruta para DELETE
 router.delete('/delete-one/:youtube_id', async (req, res) => {
     const {youtube_id} = req.params
