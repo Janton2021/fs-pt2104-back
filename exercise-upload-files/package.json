@@ -1,0 +1,20 @@
+{
+  "name": "exercise-upload-files",
+  "version": "1.0.0",
+  "description": "- Empieza configurando un proyecto desde 0. Recuerda:\r     - npm init (o npm init -y)\r     - npm i express mongoose\r     - npm i -D nodemon\r     - genera toda la estructura de carpetas y ficheros correspondientes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}
