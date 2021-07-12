@@ -1,17 +1,13 @@
 const { getAllSongs } = require('../../queries/NEAs')
 
 module.exports = async (req, res, next) => {
-    const result = await getDesignacionCuatro()
-
-    if(result === false) {
-        return next({
-            status: 500,
-            info: new Error('Try again a bit later')
-        })
-    }
+    const { discovery_date } = req.params
+    const result = await getDesignacionCuatro(discovery_date)
 
     res.status(200).json({
         success: true,
         data: result,
     })
 }
+
+//getByDateRange

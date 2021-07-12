@@ -2,7 +2,7 @@
 
   * El ejercicio constará de 3 colecciones totales. Dos de ellas serán de solo lectura y la restante será también de escritura.
   
-  ### Colección Landings
+  ### Colección Landing s
 
   * Ruta base: `http://localhost:3000/astronomy/landings`
 
